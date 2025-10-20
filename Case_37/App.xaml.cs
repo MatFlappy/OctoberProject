@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Case_37.Model;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,6 @@ namespace Case_37
     /// </summary>
     public partial class App : Application
     {
+        public static CaseEntities context = new CaseEntities();
     }
 }
