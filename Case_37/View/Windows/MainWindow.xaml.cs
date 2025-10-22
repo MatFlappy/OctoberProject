@@ -25,11 +25,27 @@ namespace Case_37
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Registraition reg = new Registraition();
-            reg.Show();
-            this.Close();
-        }
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Registraition reg = new Registraition();
+        //    reg.Show();
+        //    this.Close();
+        //}
+
+        //private void Button_Click_1(object sender, RoutedEventArgs e)
+        //{
+        //    //string username = usernameTextBox.Text;
+        //    //string password = passwordBox.Password;
+        //    //App.currentUser = App.context.User.FirstOrDefault(u => u.Login == username && u.Password == password);
+        //    //if (App.currentUser != null)
+        //    //{
+        //    //    roleId = App.currentUser.IdRole; // Присваиваем roleId значение IdRole пользователя
+        //    //    return true;
+        //    //}
+        //    //else
+        //    //{
+        //    //    return false;
+        //    //}
+        //}
     }
 }
