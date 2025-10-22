@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Case_37.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,34 @@ namespace Case_37
             MainWindow main = new MainWindow();
             main.Show();
             this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string username = usernameTextBox.Text;
+            string password = passwordBox.Password;
+            
+
+
+            // Создание нового пользователя
+            User newUser = new User
+            {
+                Login = username,
+                Password = password
+            };
+            // Добавление пользователя в базу данных
+
+            App.context.User.Add(newUser);
+            App.context.SaveChanges();
+
+            // Создание профиля пользователя
+
+
+            MessageBox.Show("Пользователь успешно зарегистрирован.");
+            
+            usernameTextBox.Text = string.Empty;
+            passwordBox.Password = string.Empty;
+
         }
     }
 }

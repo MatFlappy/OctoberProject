@@ -25,6 +25,7 @@ namespace Case_37
         {
            
             InitializeComponent();
+            Lst.ItemsSource = App.context.Game.ToList();
           
         }
 

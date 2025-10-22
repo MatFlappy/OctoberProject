@@ -25,12 +25,32 @@ namespace Case_37
             InitializeComponent();
         }
 
-        //private void Button_Click(object sender, RoutedEventArgs e)
-        //{
-        //    Registraition reg = new Registraition();
-        //    reg.Show();
-        //    this.Close();
-        //}
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var user = App.context.User.ToList().FirstOrDefault(u => u.Login == usernameTextBox.Text && u.Password == passwordBox.Password);
+
+            if (user != null) 
+            {
+                Menu men = new Menu();
+                men.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Неверное имя пользователя или пароль.");
+
+                usernameTextBox.Text = string.Empty;
+                passwordBox.Password = string.Empty;
+            }
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Registraition reg = new Registraition();
+            reg.Show();
+            this.Close();
+        }
 
         //private void Button_Click_1(object sender, RoutedEventArgs e)
         //{

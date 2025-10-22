@@ -14,7 +14,6 @@ namespace Case_37
     /// </summary>
     public partial class App : Application
     {
-        public static CaseEntities context = new CaseEntities();
-        public static User CoreccurrentUser = new User();
+       public static CaseEntities context = new CaseEntities();
     }
 }
