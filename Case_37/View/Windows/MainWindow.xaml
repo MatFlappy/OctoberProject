@@ -35,16 +35,16 @@
             
             <TextBlock Text="Логин" FontSize="24"
                 Grid.Column="1" Grid.Row="2"/>
-            
-            <TextBox Grid.Column="1" Grid.Row="3"/>
+
+            <TextBox x:Name="usernameTextBox" Grid.Column="1" Grid.Row="3"/>
             
             <TextBlock Text="Пароль" FontSize="24"
                 Grid.Column="1" Grid.Row="4"/>
             
-            <PasswordBox Grid.Column="1" Grid.Row="5"/>
+            <PasswordBox x:Name="passwordBox" Grid.Column="1" Grid.Row="5"/>
             
             <Button Background="#3c3c3c" Content="Войти" FontSize="16"                    Foreground="White"
-                Grid.Column="1" Grid.Row="7"/>
+                Grid.Column="1" Grid.Row="7" Click="Button_Click_1"/>
             
         </Grid>
 

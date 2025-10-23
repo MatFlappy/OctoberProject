@@ -25,43 +25,8 @@ namespace Case_37
         {
            
             InitializeComponent();
-            Lst.ItemsSource = App.context.Game.ToList();
-
-
-
+          
         }
 
-        //private void MainWindow_Loaded(object sender, RoutedEventArgs e)
-        //{
-        //    Lst.ItemsSource = App.context.Game.ToList();
-        //}
-
-        //private void SteachTb_GotFocus(object sender, RoutedEventArgs e)
-        //{
-        //    if (SteachTb.Text == "Введите название")
-        //    {
-        //        SteachTb.Text = "";
-        //    }
-        //}
-
-        //private void SteachTb_LostFocus(object sender, RoutedEventArgs e)
-        //{
-        //    if (SteachTb.Text == "")
-        //    {
-        //        SteachTb.Text = "Введите название";
-        //    }
-        //}
-
-        //private void Search()
-        //{
-        //    _game = App.context.Game.ToList();
-        //   _game = _game.Where(x => x.Name.ToLower().Contains(SteachTb.Text.ToLower())).ToList();
-            
-        //}
-
-        //private void TextBox_SelectionChanged(object sender, RoutedEventArgs e)
-        //{ 
-        //    Search();
-        //}
     }
 }
