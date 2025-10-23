@@ -44,7 +44,7 @@
             <PasswordBox x:Name="passwordBox" Grid.Column="1" Grid.Row="5"/>
             
             <Button Background="#3c3c3c" Content="Войти" FontSize="16"                    Foreground="White"
-                Grid.Column="1" Grid.Row="7" Click="Button_Click_1"/>
+                Grid.Column="1" Grid.Row="7" Click="Button_Click"/>
             
         </Grid>
 
@@ -74,7 +74,7 @@
 
             <Button Background="Transparent" BorderBrush="White"
                     Content="Зарегистрироваться" Foreground="White" FontSize="16"
-                Grid.Column="1" Grid.Row="5" Click="Button_Click"/>
+                Grid.Column="1" Grid.Row="5"/>
 
         </Grid>
     </Grid>

@@ -72,7 +72,7 @@
             <PasswordBox x:Name="passwordBox" Grid.Column="1" Grid.Row="5"/>
             
             <Button Background="#3c3c3c" Content="Зарегистрироваться" Foreground="White"
-                Grid.Column="1" Grid.Row="7" Click="Button_Click_1"/>
+                Grid.Column="1" Grid.Row="7"/>
 
         </Grid>
     </Grid>

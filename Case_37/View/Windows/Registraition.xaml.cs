@@ -32,32 +32,6 @@ namespace Case_37
             this.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            string username = usernameTextBox.Text;
-            string password = passwordBox.Password;
-            
-
-
-            // Создание нового пользователя
-            User newUser = new User
-            {
-                Login = username,
-                Password = password
-            };
-            // Добавление пользователя в базу данных
-
-            App.context.User.Add(newUser);
-            App.context.SaveChanges();
-
-            // Создание профиля пользователя
-
-
-            MessageBox.Show("Пользователь успешно зарегистрирован.");
-            
-            usernameTextBox.Text = string.Empty;
-            passwordBox.Password = string.Empty;
-
-        }
+       
     }
 }
