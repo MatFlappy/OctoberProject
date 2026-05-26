@@ -18,6 +18,8 @@ namespace Case_37
     /// <summary>
     /// Логика взаимодействия для Menu.xaml
     /// </summary>
+    /// 
+
     public partial class Menu : Window
     {
         //List<Game> _game = new List<Game>();
